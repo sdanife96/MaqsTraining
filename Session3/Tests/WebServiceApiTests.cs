@@ -47,6 +47,7 @@ namespace Tests
             var response = this.WebServiceDriver.Post<Trip>("authTripsAPI/1/trips/", "application/json", requestBody);
             Assert.AreEqual(0, response.numberOfStops, "New trip should start with no stops");
         }
+        
 
         [TestMethod]
         public void BadDelete()

@@ -1,0 +1,30 @@
+
+2022-07-07 13:45:35.537
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.PostNewTrip
+
+2022-07-07 13:45:35.553
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 13:45:35.556
+ACTION:	Sending POST request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/1/trips/
+Content:
+{"id":0,"name":"Testing","description":"Testing data","numberOfStops":0,"stops":null}
+
+
+2022-07-07 13:45:36.996
+INFORMATION:	Received POST response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/1/trips/
+Returned Created(201)
+Content:
+{"id":7,"name":"Testing","description":"Testing data","numberOfStops":0,"stops":[]}
+
+
+2022-07-07 13:45:37.029
+ERROR:	
+Assert.AreEqual failed. Expected:<1>. Actual:<0>. New trip should start with no stops
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual, String message)
+   at Tests.WebServiceApiTests.PostNewTrip() in c:\MAQS Repository\Session3\Tests\WebServiceApiTests.cs:line 48
+
+2022-07-07 13:45:37.034
+ERROR:	Test failed

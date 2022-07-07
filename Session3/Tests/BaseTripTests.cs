@@ -36,9 +36,19 @@ namespace Tests
             // 2. Request the Tokens from identityserver token endpoint  
             var tokenRequestEndPoint = driver.Post("/connect/token", acceptedMediaType, tokenRequestContent);
             JObject o = JObject.Parse(tokenRequestEndPoint);
+    
             
             // 3. Save off token for later use
             Config.AddTestSettingValue("TOKEN", (string)o["access_token"], ConfigSection.WebServiceMaqs);
+        }
+
+        [TestMethod]
+        public void CallService()
+        {
+            this.WebServiceDriver.HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",TOKEN);
+            var response = this.WebServiceDriver.Get("authTripsAPI/1/trips","application/json");
+
+            Assert.IsNotNull(response,"Got null response");
         }
 
         /// <summary>

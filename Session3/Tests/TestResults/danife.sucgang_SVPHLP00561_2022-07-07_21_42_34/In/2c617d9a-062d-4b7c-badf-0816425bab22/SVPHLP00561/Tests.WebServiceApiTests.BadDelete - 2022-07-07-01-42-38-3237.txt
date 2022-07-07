@@ -1,0 +1,20 @@
+
+2022-07-07 13:42:38.325
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.BadDelete
+
+2022-07-07 13:42:38.330
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 13:42:38.331
+ACTION:	Sending DELETE request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/-1/trips/-1
+Content:
+  **Content is null**
+
+2022-07-07 13:42:39.176
+INFORMATION:	Received DELETE response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/-1/trips/-1
+Returned Not Found(404)
+Content:
+"User not found with Id -1"
+
+2022-07-07 13:42:39.179
+SUCCESS:	Test passed

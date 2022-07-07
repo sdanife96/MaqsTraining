@@ -31,4 +31,13 @@ namespace WebServiceModel
         [JsonProperty("price")]
         public double Price { get; set; }
     }
+
+    // public class RootObject
+    // {
+    //     public int Id {get; set; }
+    //     public string Name {get; set; }
+    //     public string Catrgory {get; set; }
+    //     public float Price  {get; set; }
+
+    // }
 }

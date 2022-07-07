@@ -1,0 +1,21 @@
+
+2022-07-07 13:42:35.867
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.GetTripWithResponse
+
+2022-07-07 13:42:35.872
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 13:42:35.873
+ACTION:	Sending GET request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/1/trips/1
+Content:
+  **Content is null**
+
+2022-07-07 13:42:36.782
+INFORMATION:	Received GET response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/1/trips/1
+Returned OK(200)
+Content:
+{"id":1,"name":"NewYork Trip","description":"My Trip to New York!","numberOfStops":2,"stops":[{"id":1,"name":"Central Park","description":"Best Park Eva!"},{"id":2,"name":"Hot Dog Stand","description":"Number 1 hot dog place in the world!"}]}
+
+
+2022-07-07 13:42:36.796
+SUCCESS:	Test passed
