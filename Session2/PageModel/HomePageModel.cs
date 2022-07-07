@@ -2,7 +2,7 @@
 using CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions;
 using OpenQA.Selenium;
 
-namespace PageModels
+namespace PageModel
 {
     /// <summary>
     /// Page object for the Automation page
