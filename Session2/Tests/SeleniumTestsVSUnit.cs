@@ -72,6 +72,9 @@ namespace Tests
         [TestMethod]
         public void UseLogger()
         {
+            string username = Config.GetGeneralValue("Username");
+            string password = Config.GetGeneralValue("Password");
+
             // Grab values from configuration and store to value and object collections
             this.TestObject.SetValue("Username", Config.GetGeneralValue("Username"));
             this.TestObject.SetObject("Password", Config.GetGeneralValue("Password"));
@@ -81,7 +84,7 @@ namespace Tests
             
             // Suspend an reenable logging
             this.Log.SuspendLogging();
-            page.EnterCredentials("Ted", "123");
+            page.EnterCredentials(username, password);
             this.Log.ContinueLogging();
 
             HomePageModel homepage = page.LoginAfterAddingValidCredentials();
@@ -115,12 +118,15 @@ namespace Tests
         [TestMethod]
         public void UseTimers()
         {
+            string username = Config.GetGeneralValue("Username");
+            string password = Config.GetGeneralValue("Password");
+
             // Start overall timer
             this.PerfTimerCollection.StartTimer("Total timer");
 
             LoginPageModel page = new LoginPageModel(this.TestObject);
             page.OpenLoginPage();
-            page.EnterCredentials("Ted", "123");
+            page.EnterCredentials(username, password);
 
             // Start login timer
             this.PerfTimerCollection.StartTimer("Login timer");
