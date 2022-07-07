@@ -1,0 +1,21 @@
+
+2022-07-07 10:57:42.210
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.GetTripsAsObject
+
+2022-07-07 10:57:42.215
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 10:57:42.216
+ACTION:	Sending GET request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/1/trips
+Content:
+  **Content is null**
+
+2022-07-07 10:57:43.097
+INFORMATION:	Received GET response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/1/trips
+Returned OK(200)
+Content:
+[{"id":1,"name":"NewYork Trip","description":"My Trip to New York!","numberOfStops":2,"stops":[{"id":1,"name":"Central Park","description":"Best Park Eva!"},{"id":2,"name":"Hot Dog Stand","description":"Number 1 hot dog place in the world!"}]},{"id":2,"name":"Paris Trip","description":"My Trip to Paris!","numberOfStops":2,"stops":[{"id":1,"name":"Eiffel tower","description":"It's a Tower!"},{"id":2,"name":"Crescent Shop ","description":"Yummy Bread!"}]},{"id":3,"name":"Japan Trip","description":"My Trip to Japan!","numberOfStops":3,"stops":[{"id":1,"name":"Tokyo","description":"Capital of Japan!"},{"id":2,"name":"Ramen shop","description":"Excellent Ramen!"},{"id":3,"name":"Anime Convention","description":"Largets Anime Convention in the World!"}]},{"id":4,"name":"Testing","description":"Testing data","numberOfStops":0,"stops":[]}]
+
+
+2022-07-07 10:57:43.128
+SUCCESS:	Test passed

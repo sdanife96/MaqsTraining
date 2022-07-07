@@ -1,0 +1,12 @@
+c:\MAQS Repository\Session3\WebServiceModel\bin\Debug\netcoreapp3.1\WebServiceModel.deps.json
+c:\MAQS Repository\Session3\WebServiceModel\bin\Debug\netcoreapp3.1\WebServiceModel.dll
+c:\MAQS Repository\Session3\WebServiceModel\bin\Debug\netcoreapp3.1\WebServiceModel.pdb
+c:\MAQS Repository\Session3\WebServiceModel\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.csproj.AssemblyReference.cache
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.GeneratedMSBuildEditorConfig.editorconfig
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.AssemblyInfoInputs.cache
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.AssemblyInfo.cs
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.csproj.CoreCompileInputs.cache
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.csproj.CopyComplete
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.dll
+c:\MAQS Repository\Session3\WebServiceModel\obj\Debug\netcoreapp3.1\WebServiceModel.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y+H7pblSUBy6ZXvsmlgJXpET5sk7jlXtsQhjKygQM4yHRazXdh2dG9kpUt29TsN5iZprDLrZ9rGQ91dz76+BRQ==",
+  "success": true,
+  "projectFilePath": "c:\\MAQS Repository\\Session3\\WebServiceModel\\WebServiceModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danife.sucgang\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

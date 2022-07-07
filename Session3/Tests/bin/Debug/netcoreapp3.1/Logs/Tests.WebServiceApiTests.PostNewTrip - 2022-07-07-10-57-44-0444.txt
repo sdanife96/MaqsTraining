@@ -1,0 +1,22 @@
+
+2022-07-07 10:57:44.045
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.PostNewTrip
+
+2022-07-07 10:57:44.050
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 10:57:44.051
+ACTION:	Sending POST request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/1/trips/
+Content:
+{"id":0,"name":"Testing","description":"Testing data","numberOfStops":0,"stops":null}
+
+
+2022-07-07 10:57:44.988
+INFORMATION:	Received POST response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/1/trips/
+Returned Created(201)
+Content:
+{"id":5,"name":"Testing","description":"Testing data","numberOfStops":0,"stops":[]}
+
+
+2022-07-07 10:57:44.998
+SUCCESS:	Test passed

@@ -1,0 +1,21 @@
+
+2022-07-07 10:57:41.141
+INFORMATION:	Setup test object for Tests.WebServiceApiTests.GetUsersAsString
+
+2022-07-07 10:57:41.149
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 10:57:41.151
+ACTION:	Sending GET request to https://magenictripinfoapi.azurewebsites.net/ at endpoint authTripsAPI/users
+Content:
+  **Content is null**
+
+2022-07-07 10:57:42.158
+INFORMATION:	Received GET response from https://magenictripinfoapi.azurewebsites.net/authTripsAPI/users
+Returned OK(200)
+Content:
+{"contentType":null,"serializerSettings":null,"statusCode":null,"value":{"userId":"1","numberOfTrips":4}}
+
+
+2022-07-07 10:57:42.181
+SUCCESS:	Test passed

@@ -1,0 +1,21 @@
+
+2022-07-07 10:57:47.129
+INFORMATION:	Setup test object for Tests.WebServiceTestVSUnit.GetJsonDeserialized
+
+2022-07-07 10:57:47.139
+INFORMATION:	Getting event firing web service driver
+
+2022-07-07 10:57:47.140
+ACTION:	Sending GET request to https://magenicautomation.azurewebsites.net/ at endpoint /api/XML_JSON/GetProduct/1
+Content:
+  **Content is null**
+
+2022-07-07 10:57:47.994
+INFORMATION:	Received GET response from https://magenicautomation.azurewebsites.net/api/XML_JSON/GetProduct/1
+Returned OK(200)
+Content:
+{"Id":1,"Name":"Tomato Soup","Category":"Groceries","Price":1.0}
+
+
+2022-07-07 10:57:48.000
+SUCCESS:	Test passed
