@@ -1,0 +1,177 @@
+
+2022-07-08 13:20:03.874
+INFORMATION:	Setup test object for Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures
+
+2022-07-08 13:20:05.523
+INFORMATION:	Local driver: OpenQA.Selenium.Chrome.ChromeDriver
+
+2022-07-08 13:20:07.266
+INFORMATION:	Navigated to: https://magenicautomation.azurewebsites.net/Static/Training3/loginpage.html
+
+2022-07-08 13:20:07.267
+INFORMATION:	Checking to see if the lazy element 'User name input' is displayed
+
+2022-07-08 13:20:07.279
+INFORMATION:	Found element: By.CssSelector: #name
+
+2022-07-08 13:20:07.317
+INFORMATION:	Checking to see if the lazy element 'Password input' is displayed
+
+2022-07-08 13:20:07.326
+INFORMATION:	Found element: By.CssSelector: #pw
+
+2022-07-08 13:20:07.337
+INFORMATION:	Checking to see if the lazy element 'Login button' is displayed
+
+2022-07-08 13:20:07.346
+INFORMATION:	Found element: By.CssSelector: BODY
+
+2022-07-08 13:20:07.355
+INFORMATION:	Found element: By.CssSelector: #Login
+
+2022-07-08 13:20:07.399
+WARNING:	SoftAssert 'Tests.SeleniumTestsVSUnit+<>c' failed 
+Exception: 
+Assert.IsTrue failed. Cause soft assert error for demo.
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(Boolean condition, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(Boolean condition, String message)
+   at Tests.SeleniumTestsVSUnit.<>c.<SoftAssertWithLoggingFailures>b__3_0() in c:\MAQS Repository\Session5\Tests\SeleniumTestsVSUnit.cs:line 79
+   at CognizantSoftvision.Maqs.BaseTest.SoftAssert.Assert(Action assertFunction, String assertName, String failureMessage)
+
+2022-07-08 13:20:07.606
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726 Tests.SeleniumTestsVSUnit+~~c (1).Png
+
+2022-07-08 13:20:07.641
+INFORMATION:	Page Source saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726_PS (1).txt
+
+2022-07-08 13:20:07.642
+ACTION:	Send keys 'WrongTed' to 'User name input'
+
+2022-07-08 13:20:07.700
+INFORMATION:	Element value changed: WrongTed
+
+2022-07-08 13:20:07.701
+ACTION:	Send keys '123' to 'Password input'
+
+2022-07-08 13:20:07.745
+INFORMATION:	Element value changed: 123
+
+2022-07-08 13:20:07.746
+ACTION:	Click 'Login button'
+
+2022-07-08 13:20:07.769
+INFORMATION:	Element clicking: Element (id = 6b2d4e78-49fc-42f8-bb12-b55a4f68509c) Text:Login Location: X:8 Y:292
+
+2022-07-08 13:20:07.802
+INFORMATION:	Checking to see if the lazy element 'Welcome message' is displayed
+
+2022-07-08 13:20:17.884
+ERROR:	
+Timed out after 10 seconds: Waiting for existing element
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForElementExist(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawExistingElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+  no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeMessage"}
+  (Session info: chrome=103.0.5060.66)
+     at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-08 13:20:18.022
+ERROR:	
+Failed to find: Welcome message
+Locator: By.CssSelector: #WelcomeMessage
+Because: Timed out after 10 seconds: Waiting for existing element
+
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.<get_Displayed>b__38_0()
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+  Timed out after 10 seconds: Waiting for existing element
+     at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForElementExist(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawExistingElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+    no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeMessage"}
+  (Session info: chrome=103.0.5060.66)
+       at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-08 13:20:18.025
+WARNING:	SoftAssert 'Tests.SeleniumTestsVSUnit+<>c__DisplayClass3_0' failed 
+Exception: 
+Timed out waiting for <get_Displayed>b__38_0 to return
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.get_Displayed()
+   at PageModel.HomePageModel.IsPageLoaded() in c:\MAQS Repository\Session5\PageModel\HomePageModel.cs:line 34
+   at Tests.SeleniumTestsVSUnit.<>c__DisplayClass3_0.<SoftAssertWithLoggingFailures>b__1() in c:\MAQS Repository\Session5\Tests\SeleniumTestsVSUnit.cs:line 85
+   at CognizantSoftvision.Maqs.BaseTest.SoftAssert.Assert(Action assertFunction, String assertName, String failureMessage)
+  Failed to find: Welcome message
+Locator: By.CssSelector: #WelcomeMessage
+Because: Timed out after 10 seconds: Waiting for existing element
+
+     at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.<get_Displayed>b__38_0()
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+    Timed out after 10 seconds: Waiting for existing element
+       at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForElementExist(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawExistingElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+      no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeMessage"}
+  (Session info: chrome=103.0.5060.66)
+         at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+2022-07-08 13:20:18.167
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726 Tests.SeleniumTestsVSUnit+~~c__DisplayClass3_0 (2).Png
+
+2022-07-08 13:20:18.177
+INFORMATION:	Page Source saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726_PS (2).txt
+
+2022-07-08 13:20:18.179
+ERROR:	Total number of Asserts: 2. 
+Passed Asserts = 0 
+Failed Asserts = 2
+
+List of failed exceptions:
+Assert.IsTrue failed. Cause soft assert error for demo.
+Timed out waiting for <get_Displayed>b__38_0 to return
+
+2022-07-08 13:20:18.180
+ERROR:	Test failed
+
+2022-07-08 13:20:18.310
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726 Final.Png
+
+2022-07-08 13:20:18.320
+INFORMATION:	Page Source saved: c:\MAQS Repository\Session5\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures - 2022-07-08-01-20-03-8726_PSFinalPageSource.txt

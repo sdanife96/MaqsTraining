@@ -1,0 +1,38 @@
+
+2022-07-08 13:07:41.169
+INFORMATION:	Setup test object for Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures
+
+2022-07-08 13:07:41.654
+ERROR:	
+The new session command returned a value ('{"status": 13, "sessionId": "new_request:30180", "value": {"message": "Misconfigured -- Sauce Labs Authentication Error.\nYou used username 'USER' and access key 'KEY' to authenticate, which are not valid Sauce Labs credentials.\n\nThe following desired capabilities were received:\n{'browserName': 'chrome',\n 'goog:chromeOptions': {},\n 'platformName': 'Windows 10',\n 'sauce:options': {'accessKey': 'KEY',\n                   'username': 'USER'}}"}}') that is not a valid JSON object.
+   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.WebDriverFactory.GetBrowserWithDefaultConfiguration(BrowserType browser)
+
+
+
+2022-07-08 13:07:41.667
+ERROR:	
+Your web driver may be out of date or unsupported.
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.WebDriverFactory.GetBrowserWithDefaultConfiguration(BrowserType browser)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.WebDriverFactory.GetDefaultBrowser()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.BaseSeleniumTest.GetBrowser()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.BaseSeleniumTest.<CreateSpecificTestObject>b__6_0()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.SeleniumDriverManager.GetWebDriver()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.SeleniumTestObject.get_WebDriver()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.BaseSeleniumPageModel..ctor(ISeleniumTestObject testObject)
+   at PageModel.LoginPageModel..ctor(ISeleniumTestObject testObject) in c:\MAQS Repository\Session5\PageModel\LoginPageModel.cs:line 22
+   at Tests.SeleniumTestsVSUnit.SoftAssertWithLoggingFailures() in c:\MAQS Repository\Session5\Tests\SeleniumTestsVSUnit.cs:line 75
+  The new session command returned a value ('{"status": 13, "sessionId": "new_request:30180", "value": {"message": "Misconfigured -- Sauce Labs Authentication Error.\nYou used username 'USER' and access key 'KEY' to authenticate, which are not valid Sauce Labs credentials.\n\nThe following desired capabilities were received:\n{'browserName': 'chrome',\n 'goog:chromeOptions': {},\n 'platformName': 'Windows 10',\n 'sauce:options': {'accessKey': 'KEY',\n                   'username': 'USER'}}"}}') that is not a valid JSON object.
+     at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.WebDriverFactory.GetBrowserWithDefaultConfiguration(BrowserType browser)
+
+
+
+2022-07-08 13:07:41.670
+ERROR:	Test failed
