@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using HttpClientFactory = CognizantSoftvision.Maqs.BaseWebServiceTest.HttpClientFactory
+using HttpClientFactory = CognizantSoftvision.Maqs.BaseWebServiceTest.HttpClientFactory;
 
 namespace Tests
 {

@@ -16,6 +16,8 @@ namespace Tests
     [TestClass]
     public class BaseTripTests : BaseWebServiceTest
     {
+
+        protected static string TOKEN;
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
