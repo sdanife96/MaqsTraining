@@ -1,0 +1,35 @@
+
+2022-07-11 12:50:52.460
+INFORMATION:	Setup test object for Tests.DatabaseTestVSUnit.Insert
+
+2022-07-11 12:50:52.466
+INFORMATION:	Getting event firing database driver
+
+2022-07-11 12:50:52.467
+ACTION:	Perform query with:
+SELECT Id FROM 'products' where ProductName='NewProd'
+
+2022-07-11 12:50:52.473
+ACTION:	Perform insert with:
+
+
+2022-07-11 12:50:52.565
+ACTION:	Perform query with:
+SELECT Id FROM 'products' where ProductName='NewProd'
+
+2022-07-11 12:50:52.692
+ERROR:	
+Assert.AreEqual failed. Expected:<-1>. Actual:<1>. 
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual)
+   at Tests.DatabaseTestVSUnit.Insert() in c:\MAQS Repository\Session4\Tests\DatabaseTestVSUnit.cs:line 122
+
+2022-07-11 12:50:52.695
+ERROR:	Test failed
+
+2022-07-11 12:50:52.696
+ACTION:	Release connection
+
+2022-07-11 12:50:52.697
+INFORMATION:	Released connection

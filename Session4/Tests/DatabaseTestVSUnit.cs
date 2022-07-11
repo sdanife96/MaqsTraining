@@ -121,5 +121,25 @@ namespace Tests
             // Make sure we have the correct number of NewProd elements
             Assert.AreEqual(expectedCountAfterInsert, DatabaseDriver.Query<User>("SELECT Id FROM 'products' where ProductName='NewProd'").ToList().Count);
         }
+      ///////////////////// Sample Query 
+
+        [TestMethod]
+        public void SampleQuery()
+        {
+            IEnumerable<dynamic> table = DatabaseDriver.Query("SELECT * FROM products");
+
+            foreach (dynamic row in table)
+            {
+                Console.WriteLine(row.Id);
+                Console.WriteLine(row.ProductName);
+
+                if (row.Id == 5)
+                {
+                    return;
+                }
+            }
+
+            Assert.Fail("Failed to find product 5");
+        }
     }
 }
