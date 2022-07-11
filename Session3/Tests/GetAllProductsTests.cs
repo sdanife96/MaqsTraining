@@ -45,7 +45,7 @@ namespace Tests
         public void CallService()
         {
             this.WebServiceDriver.HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", TOKEN);
-            var response = this.WebServiceDriver.Get("authTripsAPI/1/trips","application/json");
+            var response = this.WebServiceDriver.Get("/api/XML_JSON/GetAllProducts","application/json");
 
             Assert.IsNotNull(response,"Got null response");
         }

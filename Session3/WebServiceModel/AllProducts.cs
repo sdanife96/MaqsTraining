@@ -2,10 +2,7 @@ namespace WebServiceModel
 {
     public class AllProducts
     {
-        
-        public int id { get; set; }
-        public string name { get; set; }
-        public string category { get; set; }
-        public int price { get; set; }
+        // Declare a single-dimensional array of 5 integers.
+        public int[] arrayProducts = new int[5];
     }
 }
