@@ -27,6 +27,13 @@ namespace Tests
         }
 
         [TestMethod]
+        public void GetAllProductsAsObject()
+        {
+            var response = this.WebServiceDriver.Get<Trip[]>("/api/XML_JSON/GetAllProducts", "application/json");
+            Assert.AreEqual("NewYork Trip", response[0].name, "Wrong trip");
+        }
+
+        [TestMethod]
         public void GetTripWithResponse()
         {
             var response = this.WebServiceDriver.GetWithResponse("authTripsAPI/1/trips/1", "application/json", HttpStatusCode.OK);

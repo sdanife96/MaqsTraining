@@ -31,5 +31,18 @@ namespace Tests
 
             Assert.AreEqual(1, result.Id, "Expected to get product 1");
         }
+
+
+        /// <summary>
+        /// Get array  product as XML
+        /// </summary>
+        [Test]
+        public void GetArrayXmlDeserializedNUnit()
+        {
+            ProductXml result = this.WebServiceDriver.Get<ProductXml>("/api/XML_JSON/GetAllProducts", "application/xml", false);
+
+            Assert.AreEqual(1, result.Id, "Expected to get product 1");
+        }
+
     }
 }

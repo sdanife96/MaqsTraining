@@ -39,13 +39,14 @@ namespace Tests
     
             
             // 3. Save off token for later use
-            Config.AddTestSettingValue("TOKEN", (string)o["access_token"], ConfigSection.WebServiceMaqs);
+            TOKEN = (string)o["access_token"];
+            //Config.AddTestSettingValue("TOKEN", (string)o["access_token"], ConfigSection.WebServiceMaqs);
         }
 
         [TestMethod]
         public void CallService()
         {
-            this.WebServiceDriver.HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",TOKEN);
+            this.WebServiceDriver.HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", TOKEN);
             var response = this.WebServiceDriver.Get("authTripsAPI/1/trips","application/json");
 
             Assert.IsNotNull(response,"Got null response");

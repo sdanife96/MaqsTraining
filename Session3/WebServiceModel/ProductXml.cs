@@ -29,5 +29,8 @@ namespace WebServiceModel
         /// Gets or sets the product price
         /// </summary>
         public double Price { get; set; }
+
+        // Declare a single-dimensional array of 5 integers.
+        public int[] arrayProducts = new int[5];
     }
 }

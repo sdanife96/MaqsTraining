@@ -13,6 +13,7 @@ namespace Tests
     [TestClass]
     public class GetAllProductsTests  : BaseWebServiceTest
     {
+        protected static string TOKEN;
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
