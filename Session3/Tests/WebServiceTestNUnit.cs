@@ -36,7 +36,7 @@ namespace Tests
         public void GetAllProductsAsObject()
         {
             var response = this.WebServiceDriver.Get<AllProducts[]>("/api/XML_JSON/GetAllProducts", "application/json");
-            Assert.AreEqual("Tomato Soup", response[0].Name, "Incorrect Matched");
+            Assert.AreEqual("Hammer", response[2].Name, "Incorrect Matched");
         }
     }
 }
