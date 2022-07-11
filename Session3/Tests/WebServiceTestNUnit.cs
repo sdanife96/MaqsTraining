@@ -1,6 +1,7 @@
 ﻿using CognizantSoftvision.Maqs.BaseWebServiceTest;
 using NUnit.Framework;
 using WebServiceModel;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -28,34 +29,14 @@ namespace Tests
         public void GetJsonDeserializedNUnit()
         {
             ProductJson result = this.WebServiceDriver.Get<ProductJson>("/api/XML_JSON/GetProduct/1", "application/json", false);
-
             Assert.AreEqual(1, result.Id, "Expected to get product 1");
         }
 
-
-       //////XML AND JSON THATS GETS fFROM GET ALL PRODUCTS API 
-
-        /// <summary>
-        /// Get array  product as XML
-        /// </summary>
         [Test]
-        public void GetArrayXmlDeserializedNUnit()
+        public void GetAllProductsAsObject()
         {
-            ProductXml result = this.WebServiceDriver.Get<ProductXml>("/api/XML_JSON/GetAllProducts", "application/xml", false);
-
-            Assert.AreEqual(1, result.arrayProducts, "Expected to get all products in Array");
+            var response = this.WebServiceDriver.Get<AllProducts[]>("/api/XML_JSON/GetAllProducts", "application/json");
+            Assert.AreEqual("Tomato Soup", response[0].Name, "Incorrect Matched");
         }
-
-        /// <summary>
-        /// Get array  product as XML
-        /// </summary>
-        [Test]
-        public void GetArrayJsonDeserializedNUnit()
-        {
-            ProductJson result = this.WebServiceDriver.Get<ProductJson>("/api/XML_JSON/GetAllProducts", "application/xml", false);
-
-            Assert.AreEqual(1, result.arrayProducts, "Expected to get all products in Array");
-        }
-
     }
 }

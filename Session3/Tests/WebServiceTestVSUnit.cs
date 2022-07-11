@@ -1,6 +1,7 @@
 ﻿using CognizantSoftvision.Maqs.BaseWebServiceTest;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebServiceModel;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -38,22 +39,10 @@ namespace Tests
         /// Get array  product as XML
         /// </summary>
         [TestMethod]
-        public void GetArrayXmlDeserializedNUnit()
+        public void GetArrayDeserializedNUnit()
         {
-            ProductXml result = this.WebServiceDriver.Get<ProductXml>("/api/XML_JSON/GetAllProducts", "application/xml", false);
-
-            Assert.AreEqual(1, result.arrayProducts, "Expected to get all products in Array");
-        }
-
-        /// <summary>
-        /// Get array  product as XML
-        /// </summary>
-        [TestMethod]
-        public void GetArrayJsonDeserializedNUnit()
-        {
-            ProductJson result = this.WebServiceDriver.Get<ProductJson>("/api/XML_JSON/GetAllProducts", "application/xml", false);
-
-            Assert.AreEqual(1, result.arrayProducts, "Expected to get all products in Array");
+            var response = this.WebServiceDriver.Get<AllProducts[]>("/api/XML_JSON/GetAllProducts", "application/json");
+            Assert.AreEqual("Tomato Soup", response[0].Name, "Incorrect Matched");
         }
 
     }

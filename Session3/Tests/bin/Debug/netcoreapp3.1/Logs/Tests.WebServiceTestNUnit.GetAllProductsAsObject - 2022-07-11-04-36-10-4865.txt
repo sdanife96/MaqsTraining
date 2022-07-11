@@ -1,0 +1,35 @@
+
+2022-07-11 16:36:10.496
+INFORMATION:	Setup test object for Tests.WebServiceTestNUnit.GetAllProductsAsObject
+
+2022-07-11 16:36:10.507
+INFORMATION:	Getting event firing web service driver
+
+2022-07-11 16:36:10.521
+ACTION:	Sending GET request to https://magenicautomation.azurewebsites.net/ at endpoint /api/XML_JSON/GetAllProducts
+Content:
+  **Content is null**
+
+2022-07-11 16:36:11.633
+INFORMATION:	Received GET response from https://magenicautomation.azurewebsites.net/api/XML_JSON/GetAllProducts
+Returned OK(200)
+Content:
+[{"Id":1,"Name":"Tomato Soup","Category":"Groceries","Price":1.0},{"Id":2,"Name":"Yo-yo","Category":"Toys","Price":3.75},{"Id":3,"Name":"Hammer","Category":"Hardware","Price":16.99}]
+
+
+2022-07-11 16:36:11.709
+ERROR:	
+  Wrong trip
+  Expected string length 12 but was 11. Strings differ at index 0.
+  Expected: "NewYork Trip"
+  But was:  "Tomato Soup"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message)
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at Tests.WebServiceTestNUnit.GetAllProductsAsObject() in c:\MAQS Repository\Session3\Tests\WebServiceTestNUnit.cs:line 39
+
+2022-07-11 16:36:11.712
+ERROR:	Test failed

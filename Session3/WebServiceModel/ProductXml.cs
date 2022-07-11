@@ -31,6 +31,6 @@ namespace WebServiceModel
         public double Price { get; set; }
 
         // Declare a single-dimensional array of 5 integers.
-        public int[] arrayProducts = new int[5];
+        public int[] arrayProduct {get; set; }
     }
 }
