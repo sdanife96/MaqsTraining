@@ -1,0 +1,92 @@
+
+2022-07-12 14:36:15.453
+INFORMATION:	Setup test object for Tests.SeleniumTests.NavigatetoTraining2Site
+
+2022-07-12 14:36:18.035
+INFORMATION:	Local driver: OpenQA.Selenium.Chrome.ChromeDriver
+
+2022-07-12 14:36:19.021
+INFORMATION:	Navigated to: https://magenicautomation.azurewebsites.net/Static/Training2/loginpage.html
+
+2022-07-12 14:36:19.022
+INFORMATION:	Checking to see if the lazy element 'User name input' is displayed
+
+2022-07-12 14:36:19.039
+INFORMATION:	Found element: By.CssSelector: #UserName
+
+2022-07-12 14:36:19.082
+INFORMATION:	Checking to see if the lazy element 'Password input' is displayed
+
+2022-07-12 14:36:19.096
+INFORMATION:	Found element: By.CssSelector: #Password
+
+2022-07-12 14:36:19.111
+INFORMATION:	Checking to see if the lazy element 'Login button' is displayed
+
+2022-07-12 14:36:19.124
+INFORMATION:	Found element: By.CssSelector: #Login
+
+2022-07-12 14:36:19.138
+ACTION:	Send keys 'Ted' to 'User name input'
+
+2022-07-12 14:36:19.203
+INFORMATION:	Element value changed: Ted
+
+2022-07-12 14:36:19.204
+ACTION:	Send keys '123' to 'Password input'
+
+2022-07-12 14:36:19.269
+INFORMATION:	Element value changed: 123
+
+2022-07-12 14:36:19.270
+ACTION:	Click 'Login button'
+
+2022-07-12 14:36:19.303
+INFORMATION:	Element clicking: Element (id = 1e082f97-d568-4f05-8a54-09e2e1cbcaf4) Text:Login Location: X:8 Y:292
+
+2022-07-12 14:36:19.820
+INFORMATION:	Checking to see if the lazy element 'How it works' is displayed
+
+2022-07-12 14:36:19.834
+INFORMATION:	Found element: By.CssSelector: #HowWork
+
+2022-07-12 14:36:19.856
+ACTION:	Click 'How it works'
+
+2022-07-12 14:36:19.894
+INFORMATION:	Element clicking: Element (id = 26e58c85-67c7-45d5-bd98-bd911954b850) Text: Location: X:390 Y:155
+
+2022-07-12 14:36:20.199
+INFORMATION:	Checking to see if the lazy element 'How it works' is displayed
+
+2022-07-12 14:36:20.215
+INFORMATION:	Found element: By.CssSelector: #HowWorks
+
+2022-07-12 14:36:20.229
+ACTION:	Click 'Async page'
+
+2022-07-12 14:36:20.250
+INFORMATION:	Found element: By.CssSelector: #Async
+
+2022-07-12 14:36:20.305
+INFORMATION:	Element clicking: Element (id = 80f9c3e3-4e13-46d8-bcd1-6719f8e469c0) Text: Location: X:770 Y:155
+
+2022-07-12 14:36:20.664
+INFORMATION:	Checking to see if the lazy element 'Async Page' is displayed
+
+2022-07-12 14:36:20.678
+INFORMATION:	Found element: By.CssSelector: #Label
+
+2022-07-12 14:36:20.706
+ERROR:	
+Assert.IsTrue failed. 
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(Boolean condition, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(Boolean condition)
+   at Tests.SeleniumTests.NavigatetoTraining2Site(String userName, String password) in c:\MAQS Repository\Session6\Tests\SeleniumTests.cs:line 38
+
+2022-07-12 14:36:20.708
+ERROR:	Test failed
+
+2022-07-12 14:36:20.952
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session6\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTests.NavigatetoTraining2Site - 2022-07-12-02-36-15-4174 Final.Png

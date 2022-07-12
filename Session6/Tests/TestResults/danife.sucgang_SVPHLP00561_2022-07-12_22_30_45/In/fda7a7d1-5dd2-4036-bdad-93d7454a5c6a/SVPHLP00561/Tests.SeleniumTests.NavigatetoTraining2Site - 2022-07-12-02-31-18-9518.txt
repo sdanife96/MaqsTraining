@@ -1,0 +1,24 @@
+
+2022-07-12 14:31:18.953
+INFORMATION:	Setup test object for Tests.SeleniumTests.NavigatetoTraining2Site
+
+2022-07-12 14:31:21.075
+INFORMATION:	Local driver: OpenQA.Selenium.Chrome.ChromeDriver
+
+2022-07-12 14:31:22.080
+ERROR:	
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=103.0.5060.114)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.set_Url(String value)
+   at OpenQA.Selenium.Navigator.GoToUrl(String url)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.EventFiringNavigation.GoToUrl(String url)
+   at Models.LoginPageModel.OpenLoginPage() in c:\MAQS Repository\Session6\Models\WebPage\LoginPageModel.cs:line 63
+   at Tests.SeleniumTests.NavigatetoTraining2Site(String userName, String password) in c:\MAQS Repository\Session6\Tests\SeleniumTests.cs:line 27
+
+2022-07-12 14:31:22.100
+ERROR:	Test failed
+
+2022-07-12 14:31:22.293
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session6\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTests.NavigatetoTraining2Site - 2022-07-12-02-31-18-9518 Final.Png

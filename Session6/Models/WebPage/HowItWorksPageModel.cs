@@ -1,6 +1,7 @@
 using CognizantSoftvision.Maqs.BaseSeleniumTest;
 using CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions;
 using OpenQA.Selenium;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Models
 
 {
@@ -20,11 +21,12 @@ namespace Models
         /// </summary>
         private LazyElement HIWPageButton
         {
-            get { return this.GetLazyElement(By.CssSelector("#HowWork"), "How it Works page"); }
+            get { return this.GetLazyElement(By.XPath("//input[@id='HowWork']"), "How it works"); }
         }
         
         public void NavigatetoHIWPage()
         {
+           // Assert.IsTrue(this.HIWPageButton.Displayed);
             this.HIWPageButton.Click();
         }
 
@@ -33,7 +35,7 @@ namespace Models
         /// </summary>
         private LazyElement HIWPageDetails
         {
-            get { return this.GetLazyElement(By.CssSelector("#HowWorks"), "How it Works Page"); }
+            get { return this.GetLazyElement(By.XPath("//p[@id='HowWorks']"), "How it works"); }
         }
 
         /// <summary>

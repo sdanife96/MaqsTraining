@@ -90,33 +90,6 @@ namespace Models
         }
 
         /// <summary>
-        /// Enter the use credentials and try to log in - Verify login failed
-        /// </summary>
-        /// <param name="userName">The user name</param>
-        /// <param name="password">The user password</param>
-        /// <returns>True if the error message is displayed</returns>
-         [TestMethod]
-        [TestCategory("DaataDriven")]
-        [DataRow("Ted","12345")]
-        [DataRow("Ted","1234")]
-        [DataRow("Ted","123456")]
-        [DataRow("Ted","123qwe")]
-        [DataRow("Ted","qwerty")]
-        public void InvalidLoginDatas(string username, string password)
-        {
-            this.TestObject.Log.LogMessage("Start Test Invalid Login");
-           
-        }
-
-        public bool LoginWithInvalid_ValidCredentials(string userName, string password)
-        {
-            this.InvalidLoginDatas(userName,password);
-            //this.EnterCredentials(userName, password);
-            this.LoginButton.Click();
-            return this.ErrorMessage.Displayed;
-        }
-
-        /// <summary>
         /// Assert the login page loaded
         /// </summary>
         public void AssertPageLoaded()
