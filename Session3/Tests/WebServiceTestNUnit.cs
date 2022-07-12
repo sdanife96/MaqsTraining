@@ -2,6 +2,8 @@
 using NUnit.Framework;
 using WebServiceModel;
 using System.Collections.Generic;
+using System;
+
 
 namespace Tests
 {
@@ -35,8 +37,23 @@ namespace Tests
         [Test]
         public void GetAllProductsAsObject()
         {
+            
             var response = this.WebServiceDriver.Get<AllProducts[]>("/api/XML_JSON/GetAllProducts", "application/json");
-            Assert.AreEqual("Hammer", response[2].Name, "Incorrect Matched");
+            Console.WriteLine(response);
+            if(response.Equals(0))
+            {
+                //Console.WriteLine(response);
+                Assert.AreEqual("Tomato Soup", response[2].Name, "Incorrect Matched");
+            }else if(response.Equals(1))
+            {
+                //Console.WriteLine(response);
+                Assert.AreEqual("Yo-yo", response[2].Name, "Incorrect Matched");
+            }else if(response.Equals(2))
+            {
+                 Assert.AreEqual("Hammer", response[2].Name, "Incorrect Matched");
+            }
+           
         }
+        
     }
 }
