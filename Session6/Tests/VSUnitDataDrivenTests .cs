@@ -46,5 +46,20 @@ namespace Tests
                 yield return new object[] { -1, 1, 0 };
             }
         }
+
+        [DataTestMethod]
+        [TestCategory("DataDriven")]
+        [DataRow("Ted","12345")]
+        [DataRow("Ted","1234")]
+        [DataRow("Ted","123456")]
+        [DataRow("Ted","123qwe")]
+        [DataRow("Ted","qwerty")]
+        [DataRow("Ted","123")]
+        public void InvalidLoginDatas(string username, string password)
+        {
+            this.TestObject.Log.LogMessage("Start Test Invalid Login");
+           
+        }
+
     }
 }

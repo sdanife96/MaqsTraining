@@ -1,0 +1,6 @@
+
+2022-07-12 13:11:22.157
+INFORMATION:	Setup test object for Tests.SeleniumTests.NavigatetoTraining2Site
+
+2022-07-12 13:11:22.179
+ERROR:	Test failed

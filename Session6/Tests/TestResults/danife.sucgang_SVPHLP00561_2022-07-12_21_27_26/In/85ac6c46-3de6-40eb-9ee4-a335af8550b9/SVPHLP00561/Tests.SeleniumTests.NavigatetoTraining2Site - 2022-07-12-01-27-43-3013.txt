@@ -1,0 +1,194 @@
+
+2022-07-12 13:27:43.303
+INFORMATION:	Setup test object for Tests.SeleniumTests.NavigatetoTraining2Site
+
+2022-07-12 13:27:46.623
+INFORMATION:	Local driver: OpenQA.Selenium.Chrome.ChromeDriver
+
+2022-07-12 13:27:47.697
+INFORMATION:	Navigated to: https://magenicautomation.azurewebsites.net/Static/Training2/loginpage.html
+
+2022-07-12 13:27:47.699
+INFORMATION:	Checking to see if the lazy element 'User name input' is displayed
+
+2022-07-12 13:27:47.742
+INFORMATION:	Found element: By.CssSelector: #UserName
+
+2022-07-12 13:27:47.810
+INFORMATION:	Checking to see if the lazy element 'Password input' is displayed
+
+2022-07-12 13:27:47.846
+INFORMATION:	Found element: By.CssSelector: #Password
+
+2022-07-12 13:27:47.888
+INFORMATION:	Checking to see if the lazy element 'Login button' is displayed
+
+2022-07-12 13:27:47.921
+INFORMATION:	Found element: By.CssSelector: #Login
+
+2022-07-12 13:27:47.950
+INFORMATION:	Start Test Invalid Login
+
+2022-07-12 13:27:47.953
+ACTION:	Click 'Login button'
+
+2022-07-12 13:27:48.045
+INFORMATION:	Element clicking: Element (id = 7f4b2699-db6c-4ebd-bcf1-d8aa3c6fc597) Text:Login Location: X:8 Y:292
+
+2022-07-12 13:27:48.112
+INFORMATION:	Checking to see if the lazy element 'Error message' is displayed
+
+2022-07-12 13:27:48.125
+INFORMATION:	Found element: By.CssSelector: #LoginError
+
+2022-07-12 13:27:48.139
+INFORMATION:	Start Test Invalid Login
+
+2022-07-12 13:27:48.141
+ACTION:	Click 'Login button'
+
+2022-07-12 13:27:48.173
+INFORMATION:	Element clicking: Element (id = 7f4b2699-db6c-4ebd-bcf1-d8aa3c6fc597) Text:Login Location: X:8 Y:292
+
+2022-07-12 13:27:48.213
+INFORMATION:	Checking to see if the lazy element 'Error message' is displayed
+
+2022-07-12 13:27:48.231
+ACTION:	Send keys 'Ted' to 'User name input'
+
+2022-07-12 13:27:48.361
+INFORMATION:	Element value changed: Ted
+
+2022-07-12 13:27:48.363
+ACTION:	Send keys '123456' to 'Password input'
+
+2022-07-12 13:27:48.573
+INFORMATION:	Element value changed: 123456
+
+2022-07-12 13:27:48.575
+ACTION:	Click 'Login button'
+
+2022-07-12 13:27:48.654
+INFORMATION:	Element clicking: Element (id = 7f4b2699-db6c-4ebd-bcf1-d8aa3c6fc597) Text:Login Location: X:8 Y:292
+
+2022-07-12 13:27:48.735
+INFORMATION:	Checking to see if the lazy element 'User name input' is displayed
+
+2022-07-12 13:27:48.755
+INFORMATION:	Checking to see if the lazy element 'Password input' is displayed
+
+2022-07-12 13:27:48.774
+INFORMATION:	Checking to see if the lazy element 'Login button' is displayed
+
+2022-07-12 13:27:48.791
+ACTION:	Click 'About'
+
+2022-07-12 13:27:58.965
+ERROR:	
+no such element: Unable to locate element: {"method":"css selector","selector":"#About"}
+  (Session info: chrome=103.0.5060.114)
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.<>c__DisplayClass37_0.<ElementIsClickable>b__0(ISearchContext driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-12 13:27:58.976
+ERROR:	
+Timed out after 10 seconds: Waiting for clickable element
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForClickableElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawClickableElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+  no such element: Unable to locate element: {"method":"css selector","selector":"#About"}
+  (Session info: chrome=103.0.5060.114)
+     at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.<>c__DisplayClass37_0.<ElementIsClickable>b__0(ISearchContext driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-12 13:27:59.098
+ERROR:	
+Failed to find: About
+Locator: By.CssSelector: #About
+Because: Timed out after 10 seconds: Waiting for clickable element
+
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.<Click>b__53_0()
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+  Timed out after 10 seconds: Waiting for clickable element
+     at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForClickableElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawClickableElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+    no such element: Unable to locate element: {"method":"css selector","selector":"#About"}
+  (Session info: chrome=103.0.5060.114)
+       at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.<>c__DisplayClass37_0.<ElementIsClickable>b__0(ISearchContext driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-12 13:27:59.109
+ERROR:	
+Timed out waiting for <Click>b__53_0 to return
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.Click()
+   at Models.AboutPageModel.NavigatetoAboutPage() in c:\MAQS Repository\Session6\Models\WebPage\AboutPageModel.cs:line 27
+   at Tests.SeleniumTests.NavigatetoTraining2Site(String userName, String password) in c:\MAQS Repository\Session6\Tests\SeleniumTests.cs:line 32
+  Failed to find: About
+Locator: By.CssSelector: #About
+Because: Timed out after 10 seconds: Waiting for clickable element
+
+     at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.<Click>b__53_0()
+   at CognizantSoftvision.Maqs.Utilities.Helper.GenericWait.Wait[T](Func`1 waitFor, TimeSpan retryTime, TimeSpan timeout)
+    Timed out after 10 seconds: Waiting for clickable element
+       at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.ForClickableElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetRawClickableElement()
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.AbstractLazyIWebElement.GetElement(Func`1 getElement)
+      no such element: Unable to locate element: {"method":"css selector","selector":"#About"}
+  (Session info: chrome=103.0.5060.114)
+         at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.WebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.FindElement(By by)
+   at CognizantSoftvision.Maqs.BaseSeleniumTest.Extensions.Wait.<>c__DisplayClass37_0.<ElementIsClickable>b__0(ISearchContext driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+
+
+
+2022-07-12 13:27:59.116
+ERROR:	Test failed
+
+2022-07-12 13:27:59.377
+INFORMATION:	Screenshot saved: c:\MAQS Repository\Session6\Tests\bin\Debug\netcoreapp3.1\Logs\Tests.SeleniumTests.NavigatetoTraining2Site - 2022-07-12-01-27-43-3013 Final.Png

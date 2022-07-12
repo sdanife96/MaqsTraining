@@ -1,0 +1,41 @@
+
+2022-07-12 12:31:08.275
+INFORMATION:	Setup test object for Tests.VSUnitDataDrivenTests.InvalidLoginDatas
+
+2022-07-12 12:31:08.279
+ERROR:	
+No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.SendAsync(HttpRequestMessage message)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.SendWithResponse(HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.EventFiringWebServiceDriver.SendWithResponse(HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.Send[T](HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.Get[T](String requestUri, String expectedMediaType, Boolean expectSuccess)
+   at Tests.WebServiceTests.GetXmlDeserialized() in c:\MAQS Repository\Session6\Tests\WebServiceTests.cs:line 19
+  No such host is known.
+     at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+
+2022-07-12 12:31:08.379
+ERROR:	
+No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.SendAsync(HttpRequestMessage message)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.SendWithResponse(HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.EventFiringWebServiceDriver.SendWithResponse(HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.Send[T](HttpRequestMessage httpRequestMessage, String expectedMediaType, Boolean expectSuccess)
+   at CognizantSoftvision.Maqs.BaseWebServiceTest.WebServiceDriver.Get[T](String requestUri, String expectedMediaType, Boolean expectSuccess)
+   at Tests.WebServiceTests.GetJsonDeserialized() in c:\MAQS Repository\Session6\Tests\WebServiceTests.cs:line 30
+  No such host is known.
+     at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)

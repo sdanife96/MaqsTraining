@@ -13,7 +13,7 @@ namespace Models
         /// <summary>
         /// The page url
         /// </summary>
-        private static string PageUrl = SeleniumConfig.GetWebSiteBase() + "Static/Training3/loginpage.html";
+        private static string PageUrl = SeleniumConfig.GetWebSiteBase() + "Static/Training2/loginpage.html";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LoginPageModel" /> class.
@@ -28,7 +28,7 @@ namespace Models
         /// </summary>
         private LazyElement UserNameInput
         {
-            get { return this.GetLazyElement(By.CssSelector("#name"), "User name input"); }
+            get { return this.GetLazyElement(By.CssSelector("#UserName"), "User name input"); }
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Models
         /// </summary>
         private LazyElement PasswordInput
         {
-            get { return this.GetLazyElement(By.CssSelector("#pw"), "Password input"); }
+            get { return this.GetLazyElement(By.CssSelector("#Password"), "Password input"); }
         }
 
         /// <summary>
@@ -95,9 +95,23 @@ namespace Models
         /// <param name="userName">The user name</param>
         /// <param name="password">The user password</param>
         /// <returns>True if the error message is displayed</returns>
-        public bool LoginWithInvalidCredentials(string userName, string password)
+         [TestMethod]
+        [TestCategory("DaataDriven")]
+        [DataRow("Ted","12345")]
+        [DataRow("Ted","1234")]
+        [DataRow("Ted","123456")]
+        [DataRow("Ted","123qwe")]
+        [DataRow("Ted","qwerty")]
+        public void InvalidLoginDatas(string username, string password)
         {
-            this.EnterCredentials(userName, password);
+            this.TestObject.Log.LogMessage("Start Test Invalid Login");
+           
+        }
+
+        public bool LoginWithInvalid_ValidCredentials(string userName, string password)
+        {
+            this.InvalidLoginDatas(userName,password);
+            //this.EnterCredentials(userName, password);
             this.LoginButton.Click();
             return this.ErrorMessage.Displayed;
         }

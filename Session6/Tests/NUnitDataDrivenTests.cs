@@ -1,8 +1,8 @@
 ﻿using CognizantSoftvision.Maqs.BaseTest;
 using CognizantSoftvision.Maqs.Utilities.Helper;
+
 using NUnit.Framework;
 using System.Collections.Generic;
-
 namespace Tests
 {
     /// <summary>
@@ -47,5 +47,6 @@ namespace Tests
                 yield return new int[] { -1, 1, 0 };
             }
         }
+
     }
 }
