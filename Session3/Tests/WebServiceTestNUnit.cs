@@ -43,11 +43,11 @@ namespace Tests
             if(response.Equals(0))
             {
                 //Console.WriteLine(response);
-                Assert.AreEqual("Tomato Soup", response[2].Name, "Incorrect Matched");
+                Assert.AreEqual("Tomato Soup", response[0].Name, "Incorrect Matched");
             }else if(response.Equals(1))
             {
                 //Console.WriteLine(response);
-                Assert.AreEqual("Yo-yo", response[2].Name, "Incorrect Matched");
+                Assert.AreEqual("Yo-yo", response[1].Name, "Incorrect Matched");
             }else if(response.Equals(2))
             {
                  Assert.AreEqual("Hammer", response[2].Name, "Incorrect Matched");
