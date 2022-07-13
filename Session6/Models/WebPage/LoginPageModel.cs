@@ -52,7 +52,7 @@ namespace Models
         /// </summary>
         private LazyElement ErrorMessage
         {
-            get { return this.GetLazyElement(By.CssSelector("#LoginError"), "Error message"); }
+            get { return this.GetLazyElement(By.CssSelector("#LoginError"), "Invalid name or password"); }
         }
 
         /// <summary>
@@ -75,12 +75,16 @@ namespace Models
             this.PasswordInput.SendKeys(password);
         }
 
+        
         /// <summary>
         /// Enter the use credentials and log in - Navigation sample
         /// </summary>
         /// <param name="userName">The user name</param>
         /// <param name="password">The user password</param>
         /// <returns>The home page</returns>
+        [DataTestMethod]
+        [TestCategory("DataDriven")]
+        [DataRow("Ted","123")]
         public HomePageModel LoginWithValidCredentials(string userName, string password)
         {
             this.EnterCredentials(userName, password);
@@ -88,6 +92,31 @@ namespace Models
 
             return new HomePageModel(this.TestObject);
         }
+
+        [DataTestMethod]
+        [TestCategory("DataDriven")]
+        [DataRow("Ted","12345")]
+        [DataRow("Ted","1234")]
+        [DataRow("Ted","123456")]
+        [DataRow("Ted","123qwe")]
+        [DataRow("Ted","qwerty")]
+        public HomePageModel LoginWithInvalidCredentials(string userName, string password)
+        {
+            this.EnterCredentials(userName, password);
+            this.LoginButton.Click();
+            if(ErrorMessage.Displayed)
+            {
+                Assert.IsTrue(ErrorMessage.Displayed);
+            }else if(!ErrorMessage.Displayed){
+                this.EnterCredentials("Ted", "123");
+                this.LoginButton.Click();
+            }
+            Assert.IsTrue(ErrorMessage.Displayed);
+            
+            return new HomePageModel(this.TestObject);
+        }
+
+
 
         /// <summary>
         /// Assert the login page loaded
